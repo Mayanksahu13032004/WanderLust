@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "WanderLust",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "mayank",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "for": "^0.0.1-dev.0",
+    "jws": "^4.0.0",
+    "mongoose": "^8.8.1",
+    "multer": "^1.4.5-lts.1",
+    "refresh": "^1.0.1",
+    "security": "^1.0.0",
+    "token": "^0.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
