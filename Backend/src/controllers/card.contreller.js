@@ -39,5 +39,19 @@ return res.status(201).json(
 })
 
 
+// get all cards 
 
-export {createCard}
+const getAllCard=asyncHandler(async(req,res)=>{
+    console.log("Get all cards");
+    try {
+        const cards=await Card.find();
+        res.json(cards);
+    } catch (error) {
+        res.status(500).json({ message: err.message });
+    }
+    
+    
+})
+
+
+export {createCard,getAllCard}
