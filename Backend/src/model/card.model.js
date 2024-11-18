@@ -14,10 +14,10 @@ const CardSchema = new mongoose.Schema(
       trim: true,
       maxlength: [500, "Description cannot exceed 500 characters"],
     },
-    // image: {
-    //   type: String, // This will store the file path or URL
-    //   required: [true, "Listing image is required"],
-    // },
+    image: {
+      type: String, // This will store the file path or URL
+      required: [true, "Listing image is required"],
+    },
     price: {
       type: Number,
       required: [true, "Price is required"],
