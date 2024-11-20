@@ -37,9 +37,12 @@ app.use(cookieParser());
 
 import user from './router/user.routes.js'
 import card from './router/card.routes.js'
+import review from './router/review.routes.js'
+
 
 app.use("/api/v1/project/userAuth",user) ;
 app.use("/api/v1/project/userCard",card)   
+app.use("/api/v1/project/userReview",review)
 
 
 

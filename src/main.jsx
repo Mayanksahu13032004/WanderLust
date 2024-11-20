@@ -8,6 +8,7 @@ import Login from './components/Login/Login.jsx'
 import Airnub from './components/Airnub/Airnub.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Home from './components/Home/Home.jsx'
+import DetailPage from './components/DetailPage/DetailPage.jsx'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +17,8 @@ const router=createBrowserRouter(
     <Route path='airnub' element={<Airnub />}/> 
     <Route path='signup' element={<Signup />}/> 
     <Route path='home' element={<Home />}/> 
+    <Route path='detail' element={<DetailPage />}/> 
+
     </Route>
 
   )
